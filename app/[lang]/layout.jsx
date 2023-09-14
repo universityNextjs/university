@@ -1,7 +1,6 @@
 import './globals.css'
 import { i18n } from '@/i18n.config'
 import Header from './components/header'
-
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +20,8 @@ export default function RootLayout({
   return (
     <html lang={params.lang}>
       <body className={inter.className}>
-        <Header lang={params.lang} />
+        {/* <Header lang={params.lang} /> */}
+        <Header/>
         <main>{children}</main>
       </body>
     </html>

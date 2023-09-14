@@ -3,6 +3,10 @@
     "home": "Startseite",
     "about": "Über"
   },
+  "hero": {
+    "title": "Üniversite haberleri",
+    "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500"
+    },
   "page": {
     "home": {
       "title": "Willkommen bei NextJs i18n",
@@ -11,6 +15,9 @@
     "about": {
       "title": "Über uns",
       "description": "Dies ist die About-Seite"
+    },
+    "news": {
+      "title": "Tüm Haberler Sayfası"
     }
   }
 }

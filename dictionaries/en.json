@@ -3,6 +3,10 @@
     "home": "Home",
     "about": "About"
   },
+  "hero": {
+    "title": "University News",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+  },
   "page": {
     "home": {
       "title": "Welcome to NextJs i18n",
@@ -11,6 +15,9 @@
     "about": {
       "title": "About Us",
       "description": "This is the about page"
+    },
+    "news": {
+      "title": "All News Page"
     }
   }
 }

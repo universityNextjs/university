@@ -9,7 +9,7 @@ export default async function Header({ lang }) {
   const { navigation } = await getDictionary(lang)
 
   return (
-    <header className='py-6'>
+    <header className='py-6' dir = "ltr">
       <nav className='container flex items-center justify-between'>
         <div className={` scroll-smooth fixed z-[10000]`}
     >

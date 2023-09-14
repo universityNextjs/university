@@ -4,6 +4,10 @@
       "about": "حول الجامعة",
       "colleges":"Colleges and institutes"
     },
+    "hero": {
+      "title": "أخبار الجامعة",
+      "description": "وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر"
+    },
     "page": {
       "home": {
         "title": "test test test test",
@@ -12,6 +16,9 @@
       "about": {
         "title": "test uns",
         "description": "test ist die test-test"
+      },
+      "news": {
+        "title": "صفحة جميع الأخبار"
       }
     }
   }

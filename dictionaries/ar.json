@@ -11,7 +11,25 @@
     "page": {
       "home": {
         "title": "test test test test",
-        "description": "test im test 13 test-test"
+        "description": "test im test 13 test-test",
+        "lastNews": {
+          "title": "آخر الأخبار",
+          "news1": {
+            "title": "خبر رقم 1",
+            "description": "تم نشره بتاريخ",
+            "date": "13.09.2023"
+          },
+          "news2": {
+            "title": "خبر رقم 2",
+            "description": "تم نشره بتاريخ",
+            "date": "12.09.2023"
+          },
+          "news3": {
+            "title": "خبر رقم 3",
+            "description": "تم نشره بتاريخ",
+            "date": "10.09.2023"
+          }
+        }
       },
       "about": {
         "title": "test uns",

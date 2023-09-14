@@ -6,7 +6,7 @@ export default async function Home({ params: { lang } }) {
 
   return (
       <div className='container'>
-        <LastNews />
+        <LastNews page = {page} />
       </div>
   )
 }

@@ -10,7 +10,25 @@
   "page": {
     "home": {
       "title": "Welcome to NextJs i18n",
-      "description": "Internationalization in NextJs 13 App router"
+      "description": "Internationalization in NextJs 13 App router",
+      "lastNews": {
+        "title": "Latest News",
+        "news1": {
+          "title": "News No.1",
+          "description": "Published",
+          "date": "13.09.2023"
+        },
+        "news2": {
+          "title": "News No.2",
+          "description": "Published",
+          "date": "12.09.2023"
+        },
+        "news3": {
+          "title": "News No.3",
+          "description": "Published",
+          "date": "10.09.2023"
+        }
+      }
     },
     "about": {
       "title": "About Us",

@@ -1,15 +1,15 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { IoIosArrowDown } from 'react-icons/io';
 import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from '../locale-switcher'
 const { navigation } = await getDictionary(lang)
+
 const Nav = ({lang}) => {
   // const [isOpen, setIsOpen] = useState(false);
   // const toggleDropdown = () => {
   //   setIsOpen(!isOpen);
   // };
-  
   return (
     <nav className='hidden lg:flex  lg:gap-52' >
       <ul className='text-white lg:flex space-x-6 items-center text-[18px] leading-6 font-normal lg:mr-32'>

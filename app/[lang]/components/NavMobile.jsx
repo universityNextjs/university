@@ -1,11 +1,13 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 // import icons
+import { getDictionary } from '@/lib/dictionary'
 import { Link } from 'react-router-dom';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaBars } from 'react-icons/fa';
 // FaBars 
-const NavMobile = () => {
+  export default async function NavMobile({ lang }){
+  const { navigation } = await getDictionary(lang)
+
   // const [isOpen, setisOpen] = useState(false);
   return (
     <nav className='lg:hidden relative z-20'>
@@ -22,20 +24,13 @@ const NavMobile = () => {
           <AiOutlineClose size={22} className="text-[#fff]" />
         </button>
         <li>
-          <Link className='cursor-pointer' href='/home'> الرئيسية</Link>
+        <Link href={`/${lang}`}>{navigation.home}</Link>
         </li>
         <li>
-          <Link className='cursor-pointer' href='/privacy'>المعالجين </Link>
+        <Link href={`/${lang}/about`}>{navigation.about}</Link>
         </li>
-        <li>
-          <Link className='cursor-pointer' href='/terms'> كيف تحجز جلستك؟ </Link>
-        </li>
-        <li><button className='text-[#04C873] border border-[#04C873] rounded-[26px] py-3 px-6 text-xl font-medium leading-6
-        hover:bg-[#04C873] hover:text-white' >احجز  &nbsp; الأن</button></li>
       </ul>
     </nav >
 
   )
 }
-
-export default NavMobile

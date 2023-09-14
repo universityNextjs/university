@@ -1,36 +1,44 @@
+import React from 'react'
 import Link from 'next/link'
 import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from './locale-switcher'
-
-export default async function Header({ lang }) {
-  const { navigation } = await getDictionary(lang)
-
+import { AiOutlineClose } from 'react-icons/ai';
+import { FaBars } from 'react-icons/fa';
+export default async  function Header({ lang }) {
+  const { navigation } =await  getDictionary(lang)
   return (
     <header className='py-6'>
       <nav className='container flex items-center justify-between'>
         <div className={` scroll-smooth fixed z-[10000]`}
     >
       <header
-        className={`active shadow-sm shadow-[#8ed2b5]'}
+        className={`active shadow-sm shadow-[#cccc]'}
         p-3 lg:px-0 w-full  fixed top-0 left-0 z-[10000]
-        transition-all duration-300 bg-[#193F63] `}
+        transition-all duration-300 text-black bg-white `}
       >
-        <div className='container mx-auto flex items-center px-4   justify-between  lg:justify-evenly'>
+        <div className=' mx-auto lg:mx-24 flex items-center px-4   justify-between '>
           {/* logo  */}
-           <h3>Uinversity</h3>
-          {/* nav */}
-          <li>
+           <h3 className="text-2xl font-medium">Uinversity</h3>
+       <div className='flex justify-between items-center '>
+              {/* nav */}
+              <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
             <Link href={`/${lang}`}>{navigation.home}</Link>
           </li>
-          <li>
+          <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
             <Link href={`/${lang}/about`}>{navigation.about}</Link>
           </li>
-          {/* nav-mobile */}
-          {/* <NavMobile /> */}
-        </div>
+          <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
+            <Link href={`/${lang}`}>{navigation.home}</Link>
+          </li>
+          <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
+            <Link href={`/${lang}/about`}>{navigation.about}</Link>
+          </li>
         <LocaleSwitcher />
+       </div>
+        </div>
       </header>
     </div>
+
       </nav>
     </header>
   )

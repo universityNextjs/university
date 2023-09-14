@@ -1,17 +1,70 @@
 {
     "navigation": {
-      "home": "test",
-      "about": "test"
+      "home": "الرئيسية",
+      "about": "حول الجامعة",
+      "colleges":"الكليات والمعاهد",
+      "academic":"الشؤون الأكاديمية",
+      "research":"البحث العلمي",
+      "life":"الحياة الطلابية",
+      "hospital":"المشفى الجامعية",
+      "subhospital":[
+        ["subhospital","قسم الأول"],
+        ["subhospital2","  قسم الثاني" ],
+        ["subhospital3","قسم الثالث " ]
+         ]
+
+    },
+    "hero": {
+      "title": "أخبار الجامعة",
+      "description": "وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر"
     },
     "page": {
       "home": {
         "title": "test test test test",
-        "description": "test im test 13 test-test"
+        "description": "test im test 13 test-test",
+        "lastNews": {
+          "title": "آخر الأخبار",
+          "news1": {
+            "title": "خبر رقم 1",
+            "description": "تم نشره بتاريخ",
+            "date": "13.09.2023"
+          },
+          "news2": {
+            "title": "خبر رقم 2",
+            "description": "تم نشره بتاريخ",
+            "date": "12.09.2023"
+          },
+          "news3": {
+            "title": "خبر رقم 3",
+            "description": "تم نشره بتاريخ",
+            "date": "10.09.2023"
+          }
+        }
       },
       "about": {
         "title": "test uns",
         "description": "test ist die test-test"
+      },
+      "news": {
+        "title": "صفحة جميع الأخبار"
       }
+    } ,
+    "footer": {
+      "community": "المجتمع",
+      "about": "عن الجامعة",
+      "colleges": "الكليات والمعاهد",
+      "academic": "الشؤون الأكاديمية",
+      "research": "البحث العلمي",
+      "life": "حياة الطلاب",
+      "hospital": "المستشفى",
+      "resources": "الموارد",
+      "accessibility": "سهولة الوصول",
+      "usability": "سهولة الاستخدام",
+      "allright": "جميع الحقوق محفوظة © 2020",
+      "terms": "شروط الخدمة",
+      "privacy": "سياسة الخصوصية",
+      "security": "الأمان",
+      "sitemap": "خريطة الموقع"
     }
   }
   

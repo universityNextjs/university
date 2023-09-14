@@ -9,8 +9,8 @@ async function Hero({lang}) {
       class='relative overflow-hidden bg-cover bg-no-repeat'
       style={{
         backgroundPosition: '50%',
-        backgroundImage: `url(https://mdbcdn.b-cdn.net/img/new/slides/146.webp)`,
-        height: '500px'
+        backgroundImage: `url(https://images.squarespace-cdn.com/content/v1/6051eac616f58d6b0b8af484/1618589907784-M538LOR1RC6FWZ0KVI50/back.jpeg)`,
+        height: '700px'
       }}
     >
       <div class='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.80)] bg-fixed'>

@@ -4,7 +4,7 @@ export default function Activities({page}) {
   const {home: {activities}} = page;
   return (
     <section>
-      <h2 class='mb-12 text-center text-5xl font-medium'>{activities.title}</h2>
+      <h2 class='mb-12 mt-24 text-center text-5xl font-medium'>{activities.title}</h2>
 
       <div class='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
         <div

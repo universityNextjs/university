@@ -14,9 +14,9 @@ export default async function Header({ lang }) {
         <div className={` scroll-smooth fixed z-[10000]`}
     >
       <div
-        className={`active shadow-sm shadow-[#1F2937]'}
+        className={`active shadow-sm shadow-[#2386C8]'}
         p-4 lg:px-0 w-full  fixed top-0 left-0 z-[10000]
-        transition-all duration-300 text-white bg-[#1F2937] `}
+        transition-all duration-300 text-white bg-[#2386C8] `}
       >
         <div className='flex lg:flex   mx-auto lg:mx-14  items-center px-4   justify-between '>
              <h3 className="text-2xl font-medium">Uinversity</h3>

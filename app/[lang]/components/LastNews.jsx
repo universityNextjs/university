@@ -1,9 +1,12 @@
 import Link from "next/link";
 
-export default function LastNews({lang}) {
+export default function LastNews({page}) {
+  console.log(page);
+  const {home: {lastNews}} = page;
+  console.log(lastNews);
   return (
     <section>
-      <h2 class='mb-12 text-center text-3xl font-bold'>Latest News</h2>
+      <h2 class='mb-12 text-center text-3xl font-bold'>{lastNews.title}</h2>
 
       <div class='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
         <div
@@ -19,10 +22,10 @@ export default function LastNews({lang}) {
             <div class='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed'>
               <div class='flex h-full items-end justify-start'>
                 <div class='m-6 text-white'>
-                  <h5 class='mb-3 text-lg font-bold'>News No.1</h5>
+                  <h5 class='mb-3 text-lg font-bold'>{lastNews.news1.title}</h5>
                   <p>
                     <small>
-                      Published <u>13.09.2023</u>
+                    {lastNews.news1.description} <u> {lastNews.news1.date} </u>
                     </small>
                   </p>
                 </div>
@@ -45,10 +48,10 @@ export default function LastNews({lang}) {
             <div class='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed'>
               <div class='flex h-full items-end justify-start'>
                 <div class='m-6 text-white'>
-                  <h5 class='mb-3 text-lg font-bold'>News NO.2</h5>
+                  <h5 class='mb-3 text-lg font-bold'>{lastNews.news2.title}</h5>
                   <p>
                     <small>
-                      Published <u>12.09.2023</u>
+                    {lastNews.news2.description} <u>{lastNews.news2.date}</u>
                     </small>
                   </p>
                 </div>
@@ -68,13 +71,13 @@ export default function LastNews({lang}) {
             class='w-full align-middle transition duration-300 ease-linear'
           />
           <Link href={`/news/news1`}>
-            <div class='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed'>
+            <div class='absolute bottom-0 left-0 right-0 top-0 h-full w-{lastNews.news1.title}full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed'>
               <div class='flex h-full items-end justify-start'>
                 <div class='m-6 text-white'>
-                  <h5 class='mb-3 text-lg font-bold'>Lonely mountain</h5>
+                  <h5 class='mb-3 text-lg font-bold'>{lastNews.news3.title}</h5>
                   <p>
                     <small>
-                      Published <u>10.09.2023</u>
+                    {lastNews.news3.description} <u>{lastNews.news3.date}</u>
                     </small>
                   </p>
                 </div>

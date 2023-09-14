@@ -10,7 +10,25 @@
   "page": {
     "home": {
       "title": "Willkommen bei NextJs i18n",
-      "description": "Internationalisierung im NextJs 13 App-Router"
+      "description": "Internationalisierung im NextJs 13 App-Router",
+      "lastNews": {
+        "title": "Son Haberler",
+        "news1": {
+          "title": "Haber No.1",
+          "description": "Yayınlanan",
+          "date": "13.09.2023"
+        },
+        "news2": {
+          "title": "Haber No.2",
+          "description": "Yayınlanan",
+          "date": "12.09.2023"
+        },
+        "news3": {
+          "title": "Haber No.3",
+          "description": "Yayınlanan",
+          "date": "10.09.2023"
+        }
+      }
     },
     "about": {
       "title": "Über uns",

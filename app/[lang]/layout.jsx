@@ -2,6 +2,7 @@ import './globals.css'
 import { i18n } from '@/i18n.config'
 import Header from './components/header'
 import { Inter } from 'next/font/google'
+import Hero from './components/Hero'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -13,16 +14,20 @@ export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }))
 }
 
-export default function RootLayout({
-  children,
-  params
-}) {
+export default function RootLayout({ children, params }) {
   return (
     <html lang={params.lang}>
       <body className={inter.className}>
         {/* <Header lang={params.lang} /> */}
-        <Header lang = {params.lang} />
-        <main>{children}</main>
+        <Header lang={params.lang} />
+        <main>
+          <section className='py-7'>
+            <Hero />
+           <div className='py-20'>
+           {children}
+           </div>
+          </section>
+        </main>
       </body>
     </html>
   )

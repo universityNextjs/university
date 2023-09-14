@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-function Hero() {
+import { getDictionary } from '@/lib/dictionary'
+async function Hero({lang}) {
+  const { hero } = await getDictionary(lang)
+
   return (
     <div
       class='relative overflow-hidden bg-cover bg-no-repeat'
@@ -14,9 +17,9 @@ function Hero() {
         <div class='flex h-full items-center justify-center'>
           <div class='px-6 text-center text-white md:px-12'>
             <h1 class='mb-10 mt-2 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl'>
-              Unevirsity News <br />
+            {hero.title} <br />
             </h1>
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+         <p>{hero.description}</p>
           </div>
         </div>
       </div>

@@ -16,13 +16,13 @@ export async function generateStaticParams() {
 
 export default function RootLayout({ children, params }) {
   return (
-    <html lang={params.lang}>
+    <html lang={params.lang}  dir = {params.lang == "ar" ? "rtl" : "ltr"}>
       <body className={inter.className}>
         {/* <Header lang={params.lang} /> */}
         <Header lang={params.lang} />
         <main>
-          <section className='py-7'>
-            <Hero />
+          <section className='py-6'>
+            <Hero lang = {params.lang} />
            <div className='py-20'>
            {children}
            </div>

@@ -1,0 +1,17 @@
+{
+    "navigation": {
+      "home": "test",
+      "about": "test"
+    },
+    "page": {
+      "home": {
+        "title": "test test test test",
+        "description": "test im test 13 test-test"
+      },
+      "about": {
+        "title": "test uns",
+        "description": "test ist die test-test"
+      }
+    }
+  }
+  

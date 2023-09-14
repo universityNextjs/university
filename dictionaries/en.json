@@ -38,6 +38,24 @@
           "description": "Published",
           "date": "10.09.2023"
         }
+      },
+      "activities": {
+        "title": "Latest News",
+        "activity1": {
+          "title": "Activity No.1",
+          "description": "Published",
+          "date": "13.09.2023"
+        },
+        "activity2": {
+          "title": "Activity No.2",
+          "description": "Published",
+          "date": "12.09.2023"
+        },
+        "activity3": {
+          "title": "Activity No.3",
+          "description": "Published",
+          "date": "10.09.2023"
+        }
       }
     },
     "about": {

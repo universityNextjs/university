@@ -39,6 +39,24 @@
             "description": "تم نشره بتاريخ",
             "date": "10.09.2023"
           }
+        },
+        "activities": {
+          "title": "آخر الفعاليات",
+          "activity1": {
+            "title": "فعالية رقم 1",
+            "description": "تمت بتاريخ",
+            "date": "13.09.2023"
+          },
+          "activity2": {
+            "title": "فعالية رقم 2",
+            "description": "تمت بتاريخ",
+            "date": "12.09.2023"
+          },
+          "activity3": {
+            "title": "فعالية رقم 3",
+            "description": "تمت بتاريخ",
+            "date": "10.09.2023"
+          }
         }
       },
       "about": {

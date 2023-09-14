@@ -1,5 +1,6 @@
 import { getDictionary } from '@/lib/dictionary'
 import LastNews from './components/LastNews'
+import Activities from './components/Activities'
 
 export default async function Home({ params: { lang } }) {
   const { page } = await getDictionary(lang)
@@ -7,6 +8,7 @@ export default async function Home({ params: { lang } }) {
   return (
       <div className='container'>
         <LastNews page = {page} />
+        <Activities page = {page} />
       </div>
   )
 }

@@ -2,7 +2,17 @@
     "navigation": {
       "home": "الرئيسية",
       "about": "حول الجامعة",
-      "colleges":"Colleges and institutes"
+      "colleges":"الكليات والمعاهد",
+      "academic":"الشؤون الأكاديمية",
+      "research":"البحث العلمي",
+      "life":"الحياة الطلابية",
+      "hospital":"المشفى الجامعية",
+      "subhospital":[
+        ["subhospital","قسم الأول"],
+        ["subhospital2","  قسم الثاني" ],
+        ["subhospital3","قسم الثالث " ]
+         ]
+
     },
     "hero": {
       "title": "أخبار الجامعة",
@@ -38,6 +48,23 @@
       "news": {
         "title": "صفحة جميع الأخبار"
       }
+    } ,
+    "footer": {
+      "community": "المجتمع",
+      "about": "عن الجامعة",
+      "colleges": "الكليات والمعاهد",
+      "academic": "الشؤون الأكاديمية",
+      "research": "البحث العلمي",
+      "life": "حياة الطلاب",
+      "hospital": "المستشفى",
+      "resources": "الموارد",
+      "accessibility": "سهولة الوصول",
+      "usability": "سهولة الاستخدام",
+      "allright": "جميع الحقوق محفوظة © 2020",
+      "terms": "شروط الخدمة",
+      "privacy": "سياسة الخصوصية",
+      "security": "الأمان",
+      "sitemap": "خريطة الموقع"
     }
   }
   

@@ -1,7 +1,17 @@
 {
   "navigation": {
     "home": "Home",
-    "about": "About"
+    "about": "About University",
+    "colleges": "Colleges and Institutes",
+    "academic": "Academic Affairs",
+    "research": "Scientific Research",
+    "life": "Student Life",
+    "hospital":"hospital ",
+      "subhospital":[
+        ["subhospital","subhospital"],
+        ["subhospital2","subhospital"],
+        ["subhospital3","subhospital"]
+         ]
   },
   "hero": {
     "title": "University News",
@@ -37,5 +47,22 @@
     "news": {
       "title": "All News Page"
     }
+  },
+  "footer":{
+    "community":"Community",
+    "about": "About University",
+    "colleges": "Colleges and Institutes",
+    "academic": "Academic Affairs",
+    "research": "Scientific Research",
+    "life": "Student Life",
+    "hospital":"hospital ",
+    "resources":"Resources",
+    "accessibility":"Accessibility",
+    "Usability":"usability",
+    "allright":"2020 The Good Company. All Rights Reserved",
+    "terms":"Terms of service",
+    "privacy":"Privacy Policy",
+    "security":"Security",
+    "sitemap":"Sitemap"
   }
 }

@@ -19,7 +19,7 @@ async function Hero({lang}) {
             <h1 class='mb-10 mt-2 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl'>
             {hero.title} <br />
             </h1>
-         <p>{hero.description}</p>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
           </div>
         </div>
       </div>

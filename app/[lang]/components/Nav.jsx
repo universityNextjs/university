@@ -8,60 +8,56 @@ const Nav = ({lang,navigation}) => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+  const hospitalMenuItems = navigation.subhospital;
+
   return (
-      <div className='hidden lg:flex justify-between items-center '>
-      <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
+      <div className='hidden  text-lg font-[540] lg:flex justify-between items-center '>
+      <li className="block  px-4 py-2  hover:text-[#322387cc] ">
     <Link href={`/${lang}`}>{navigation.home}</Link>
   </li>
-  <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
+  <li className="block px-4 py-2  hover:text-[#322387cc] ">
     <Link href={`/${lang}/about`}>{navigation.about}</Link>
   </li>
-  <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
-    <Link href={`/${lang}`}>{navigation.home}</Link>
+  <li className="block px-4 py-2  hover:text-[#322387cc] ">
+    <Link href={`/${lang}`}>{navigation.colleges}</Link>
   </li>
-  <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
-    <Link href={`/${lang}/about`}>{navigation.about}</Link>
+  <li className="block px-4 py-2  hover:text-[#322387cc] ">
+    <Link href={`/${lang}/about`}>{navigation.academic}</Link>
   </li>
-  <li>
+  <li className="block px-4 py-2  hover:text-[#322387cc] ">
+    <Link href={`/${lang}/about`}>{navigation.research}</Link>
+  </li>
+  <li className="block px-4 py-2  hover:text-[#322387cc] ">
+    <Link href={`/${lang}/about`}>{navigation.life}</Link>
+  </li>
+  <li className="block">
         <div className="relative">
     <button
-      className=" text-white hover:text-[#04C873]  py-2 flex rounded"
+      className="   hover:text-[#322387cc]  py-2 flex rounded"
       onClick={toggleDropdown}
     >
-      المزيد
+       {navigation.hospital}
+
       <IoIosArrowDown className='mt-1 mr-2' />  </button>
     {isOpen && (
       <div 
       className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-10">
-        <a
+         <div className=''>
+                 {hospitalMenuItems.map(([label, value], index) => (
+                <div key={index}>
+                   <a
           href="#"
-          className="block px-4 py-2 text-sm text-gray-700 hover:text-[#04C873] "
-        >
-          المقالات
-        </a>
-        <a
-          href="#"
-          className="block px-4 py-2 text-sm text-gray-700 hover:text-[#04C873] "
-        >
-          سياسية الخصوصية
-        </a>
-        <a
-          href="#"
-          className="block px-4 py-2 text-sm text-gray-700 hover:text-[#04C873] "
-        >
-          أسئلة مكررة
-        </a>
-        <a
-          href="#"
-          className="block px-4 py-2 text-sm text-gray-700 hover:text-[#04C873] "
-        >
-          أداء اختبار
-        </a>
+          className="block px-4 py-2  text-gray-700 hover:text-[#322387cc] "
+        > {value}
+          </a>
+                </div>
+              ))}
+   
+      </div>
       </div>
     )}
   </div>
   </li>
-  {/* nav-mobile */}
 </div>
   )
 }

@@ -1,7 +1,17 @@
 {
   "navigation": {
-    "home": "Startseite",
-    "about": "Über"
+    "home": "Ana Sayfa",
+    "about": "Üniversite Hakkında",
+    "colleges": "Fakülteler ve Enstitüler",
+    "academic": "Akademik İşler",
+    "research": "Bilimsel Araştırma",
+    "life": "Öğrenci Hayatı",
+    "hospital":"hospital",
+    "subhospital":[
+      ["subhospital","subhospital"],
+      ["subhospital2","subhospital"],
+      ["subhospital3","subhospital"]
+       ]
   },
   "hero": {
     "title": "Üniversite haberleri",
@@ -37,5 +47,22 @@
     "news": {
       "title": "Tüm Haberler Sayfası"
     }
+  },
+    "footer": {
+      "community": "Topluluk",
+      "about": "Üniversite Hakkında",
+      "colleges": "Kolejler ve Enstitüler",
+      "academic": "Akademik İşler",
+      "research": "Bilimsel Araştırma",
+      "life": "Öğrenci Hayatı",
+      "hospital": "Hastane",
+      "resources": "Kaynaklar",
+      "accessibility": "Erişilebilirlik",
+      "usability": "Kullanılabilirlik",
+      "allright": "Tüm Hakları Saklıdır © 2020",
+      "terms": "Hizmet Şartları",
+      "privacy": "Gizlilik Politikası",
+      "security": "Güvenlik",
+      "sitemap": "Site Haritası"
   }
 }

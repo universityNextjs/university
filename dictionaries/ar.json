@@ -1,7 +1,8 @@
 {
     "navigation": {
-      "home": "test",
-      "about": "test"
+      "home": "الرئيسية",
+      "about": "حول الجامعة",
+      "colleges":"Colleges and institutes"
     },
     "page": {
       "home": {

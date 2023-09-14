@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from './locale-switcher'
+import NavMobile from './NavMobile'
+import Nav from './Nav'
 
 export default async function Header({ lang }) {
   const { navigation } = await getDictionary(lang)
@@ -16,33 +18,16 @@ export default async function Header({ lang }) {
         p-3 lg:px-0 w-full  fixed top-0 left-0 z-[10000]
         transition-all duration-300 text-black bg-white `}
       >
-        <div className=' mx-auto lg:mx-24 flex items-center px-4   justify-between '>
-          {/* logo  */}
-           <h3 className="text-2xl font-medium">Uinversity</h3>
-       <div className='flex justify-between items-center '>
-              {/* nav */}
-              <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
-            <Link href={`/${lang}`}>{navigation.home}</Link>
-          </li>
-          <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
-            <Link href={`/${lang}/about`}>{navigation.about}</Link>
-          </li>
-          <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
-            <Link href={`/${lang}`}>{navigation.home}</Link>
-          </li>
-          <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
-            <Link href={`/${lang}/about`}>{navigation.about}</Link>
-          </li>
-          {/* nav-mobile */}
-          {/* <NavMobile /> */}
-        </div>
-        <LocaleSwitcher />
+        <div className='flex lg:flex  lg:gap-52 mx-auto lg:mx-24  items-center px-4   justify-between '>
+             <h3 className="text-2xl font-medium">Uinversity</h3>
+             <Nav lang={lang} navigation={navigation}/>
+            <LocaleSwitcher />
+           <NavMobile  />
        </div>
         </div>
-      </header>
-    </div>
-
+      </div>
       </nav>
+
     </header>
   )
 }

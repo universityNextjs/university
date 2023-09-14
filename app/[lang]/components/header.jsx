@@ -2,16 +2,16 @@ import React from 'react'
 import Link from 'next/link'
 import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from './locale-switcher'
-import { AiOutlineClose } from 'react-icons/ai';
-import { FaBars } from 'react-icons/fa';
-export default async  function Header({ lang }) {
-  const { navigation } =await  getDictionary(lang)
+
+export default async function Header({ lang }) {
+  const { navigation } = await getDictionary(lang)
+
   return (
     <header className='py-6'>
       <nav className='container flex items-center justify-between'>
         <div className={` scroll-smooth fixed z-[10000]`}
     >
-      <header
+      <div
         className={`active shadow-sm shadow-[#cccc]'}
         p-3 lg:px-0 w-full  fixed top-0 left-0 z-[10000]
         transition-all duration-300 text-black bg-white `}
@@ -33,6 +33,9 @@ export default async  function Header({ lang }) {
           <li className="block px-4 py-2 text-lg  hover:text-[#cccc] ">
             <Link href={`/${lang}/about`}>{navigation.about}</Link>
           </li>
+          {/* nav-mobile */}
+          {/* <NavMobile /> */}
+        </div>
         <LocaleSwitcher />
        </div>
         </div>

@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from './locale-switcher'
+import NavMobile from './NavMobile';
 
 export default async function Header({ lang }) {
+  console.log(lang);
   const { navigation } = await getDictionary(lang)
-
   return (
     <header className='py-6'>
       <nav className='container flex items-center justify-between'>
@@ -26,7 +27,7 @@ export default async function Header({ lang }) {
             <Link href={`/${lang}/about`}>{navigation.about}</Link>
           </li>
           {/* nav-mobile */}
-          {/* <NavMobile /> */}
+          <NavMobile />
         </div>
         <LocaleSwitcher />
       </header>

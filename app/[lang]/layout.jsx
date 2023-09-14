@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang={params.lang}>
       <body className={inter.className}>
         {/* <Header lang={params.lang} /> */}
-        <Header/>
+        <Header lang = {params.lang} />
         <main>{children}</main>
       </body>
     </html>

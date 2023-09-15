@@ -1,12 +1,14 @@
 import React from 'react'
 import { getDictionary } from '@/lib/dictionary'
+import wave from "@/images/wave.svg"
 export default async function Footer({ lang })  {
   const { footer } = await getDictionary(lang)
 
   return (
  <>
     <div class="relative  flex justify-start md:justify-center md:items-end ">
-        <img class="absolute  object-cover top-10 h-full w-full xl:mt-10 z-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_5_marketing_background.png" alt="background"/>
+        <img class="absolute  object-cover top-10 h-full w-full xl:mt-10 z-0" src="" alt="background"/>
+        {/* <img src={wave} alt="logo" className='absolute  object-cover top-10 h-full w-full xl:mt-10 z-0'/> */}
         <div class="flex pt-36 md:pt-32 lg:pt-40 xl:pt-96   px-4 md:px-6  xl:px-20 flex-col justify-start items-start md:justify-center md:items-center relative z-10">
             <div class="flex  flex-col items-start justify-start xl:justify-center xl:space-x-8 xl:flex-row">
                 <div class="flex justify-start items-center space-x-4">

@@ -11,34 +11,37 @@ const Nav = ({lang,navigation}) => {
   const hospitalMenuItems = navigation.subhospital;
 
   return (
-      <div className='hidden  text-lg font-[540] lg:flex justify-between items-center '>
-      <li className="block  px-4 py-2  hover:text-[#322387cc] ">
-    <Link href={`/${lang}`}>{navigation.home}</Link>
+      <div className='hidden h-[118px] w-fit text-lg font-[700] leading-7 lg:flex justify-between items-center '>
+      <li className="block   py-8  bg-[#019FF8] text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.home}</Link>
   </li>
-  <li className="block px-4 py-2  hover:text-[#322387cc] ">
-    <Link href={`/${lang}/about`}>{navigation.about}</Link>
+  <li className="block   py-8   hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.about}</Link>
   </li>
-  <li className="block px-4 py-2  hover:text-[#322387cc] ">
-    <Link href={`/${lang}`}>{navigation.colleges}</Link>
+  <li className="block   py-8   hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.colleges}</Link>
   </li>
-  <li className="block px-4 py-2  hover:text-[#322387cc] ">
-    <Link href={`/${lang}/about`}>{navigation.academic}</Link>
+  <li className="block   py-8   hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.academic}</Link>
   </li>
-  <li className="block px-4 py-2  hover:text-[#322387cc] ">
-    <Link href={`/${lang}/about`}>{navigation.research}</Link>
+  <li className="block   py-8   hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.research}</Link>
   </li>
-  <li className="block px-4 py-2  hover:text-[#322387cc] ">
-    <Link href={`/${lang}/about`}>{navigation.life}</Link>
+  <li className="block   py-8   hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.life}</Link>
   </li>
+
   <li className="block">
         <div className="relative">
     <button
-      className="   hover:text-[#322387cc]  py-2 flex rounded"
+      className="  flex justify-center items-center py-8 hover:bg-[#019FF8] hover:text-white"
       onClick={toggleDropdown}
     >
-       {navigation.hospital}
+      <span className="relative  block py-8 px-4 lg:p-4  font-bold">
+      {navigation.hospital}
+      </span>
 
-      <IoIosArrowDown className='mt-1 mr-2' />  </button>
+      <IoIosArrowDown  />  </button>
     {isOpen && (
       <div 
       className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-10">
@@ -47,7 +50,7 @@ const Nav = ({lang,navigation}) => {
                 <div key={index}>
                    <a
           href="#"
-          className="block px-4 py-2  text-gray-700 hover:text-[#322387cc] "
+          className="block px-4 py-2  text-gray-700 hover:bg-[#2386C8] "
         > {value}
           </a>
                 </div>

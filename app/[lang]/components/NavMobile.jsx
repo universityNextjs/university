@@ -6,11 +6,11 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { FaBars } from 'react-icons/fa'
 
 // FaBars
-const NavMobile = () => {
+const NavMobile = ({lang,navigation}) => {
   const [isOpen, setisOpen] = useState(false);
   console.log(isOpen);
   return (
-    <nav className='relative z-20 lg:hidden'>
+    <nav className='relative z-20 text-lg font-[700] leading-7 lg:hidden'>
       {/* menu icons */}
       <button type='button' onClick={() => setisOpen(prev => !prev)}>
         <span className='absolute -right-1 -top-1 h-4 w-4 rounded-sm bg-[#ffffff] p-4 content-none'></span>{' '}
@@ -21,28 +21,34 @@ const NavMobile = () => {
         className={`${
           isOpen ? 'right-0' : 'right-full'
         } fixed top-0 flex h-screen w-full flex-col items-center justify-center space-y-8
-          bg-[#25546b] text-lg text-black transition-all`}
+          bg-[#019FF8] text-lg transition-all`}
       >
         {/* close button */}
         <button className='absolute left-6 top-6'>
-          <AiOutlineClose size={22} className='text-[#000]' onClick={() => setisOpen(false)} />
+          <AiOutlineClose size={22}  onClick={() => setisOpen(false)} />
         </button>
-        <li>
-          <Link className='cursor-pointer' href='/'>
-            {' '}
-            الرئيسية
-          </Link>
-        </li>
-        <li>
-          <Link className='cursor-pointer' href='/privacy'>
-            المعالجين{' '}
-          </Link>
-        </li>
-        <li>
-          <Link className='cursor-pointer' href='/terms'>
-            كيف تحجز جلستك؟
-          </Link>
-        </li>
+        <div className='hidden h-[92px] w-fit text-lg font-[700] leading-7 lg:flex justify-between items-center '>
+      <li className="block   py-4  hover:bg-[#019FF8] text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.home}</Link>
+  </li>
+  <li className="block   py-4  hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.about}</Link>
+  </li>
+  <li className="block   py-4  hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.colleges}</Link>
+  </li>
+  <li className="block   py-4  hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.academic}</Link>
+  </li>
+  <li className="block   py-4  hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.research}</Link>
+  </li>
+  <li className="block   py-4  hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.life}</Link>
+  </li>
+
+ 
+</div>
       </ul>
     </nav>
   )

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { getDictionary } from '@/lib/dictionary'
+import SocialMedia from './SocialMedia'
 async function Hero({lang}) {
   const { hero } = await getDictionary(lang)
 
@@ -19,10 +20,11 @@ async function Hero({lang}) {
             <h1 class='mb-10 mt-2 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl'>
             {hero.title} <br />
             </h1>
-         <p>{hero.description}</p>
+         <p className="lg:px-64">{hero.description}</p>
           </div>
         </div>
       </div>
+      <SocialMedia/>
     </div>
   )
 }

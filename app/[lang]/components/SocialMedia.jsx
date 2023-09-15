@@ -5,8 +5,8 @@ function SocialMedia() {
 
     return (
         <>
-            <div className='fixed top-[30%] left-0 text-xl cursor-pointer z-10'>
-                <ul className='text-white m-0 parent '>
+            <div className='fixed top-[40%] left-0 text-xl cursor-pointer  z-10'>
+                <ul className='text-white m-0 parent'>
                     <li className='p-2.5 bg-green-600 dd'><BsWhatsapp className='hover:translate-x-1' /></li>
                     <li className='p-2.5 bg-[#00ACEE] dd'><BsTwitter className='hover:translate-x-1' /></li>
                     <li className='p-2.5 bg-[#3B5999] dd '><FaFacebookF className='hover:translate-x-1' /></li>

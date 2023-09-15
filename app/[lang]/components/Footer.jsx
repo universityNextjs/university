@@ -1,5 +1,6 @@
 import React from 'react'
 import { getDictionary } from '@/lib/dictionary'
+import wave from "@/images/wave.svg"
 export default async function Footer({ lang })  {
   const { footer } = await getDictionary(lang)
 

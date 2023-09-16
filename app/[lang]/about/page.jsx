@@ -1,4 +1,4 @@
-import AboutPage from "./../components/AboutPage"
+import AboutPage from "../components/AboutPage"
 import { getDictionary } from '@/lib/dictionary'
 
 

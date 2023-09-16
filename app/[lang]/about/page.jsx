@@ -8,7 +8,7 @@ export default async function Example({ params: { lang } }) {
 
 
   return (
-    <div className="w-full py-16 container">
+    <div className="w-full container">
       <AboutPage lang = {lang}/>
     </div>
   )

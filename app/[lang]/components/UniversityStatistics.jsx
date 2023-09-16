@@ -1,6 +1,5 @@
 "use client"
 import React from 'react';
-import { BarChart4,GraduationCap } from 'lucide-react';
 import { useState,useEffect } from 'react';
 const UniversityStatistics = ({page}) => {
   const {home: {stats}} = page;

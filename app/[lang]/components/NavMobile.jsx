@@ -27,15 +27,15 @@ const NavMobile = ({lang,navigation}) => {
         <button className='absolute left-6 top-6'>
           <AiOutlineClose size={22}  onClick={() => setisOpen(false)} />
         </button>
-        <div className='hidden h-[92px] w-fit text-lg font-[700] leading-7 lg:flex justify-between items-center '>
-      <li className="block   py-4  hover:bg-[#019FF8] text-white ">
-    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.home}</Link>
+        <div className=' h-[92px] w-fit text-lg font-[700] leading-7 lg:flex justify-between items-center '>
+      <li className="block    hover:bg-[#019FF8] text-white ">
+    <Link className="relative block py-2 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.home}</Link>
   </li>
-  <li className="block   py-4  hover:bg-[#019FF8] hover:text-white ">
-    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}/about`}>{navigation.about}</Link>
+  <li className="block    hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-2 px-4 lg:p-4  font-bold" href={`/${lang}/about`}>{navigation.about}</Link>
   </li>
-  <li className="block   py-4  hover:bg-[#019FF8] hover:text-white ">
-    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.colleges}</Link>
+  <li className="block    hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-2 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.colleges}</Link>
   </li>
   <li className="block   py-4  hover:bg-[#019FF8] hover:text-white ">
     <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}/academic`}>{navigation.academic}</Link>
@@ -43,8 +43,8 @@ const NavMobile = ({lang,navigation}) => {
   <li className="block   py-4  hover:bg-[#019FF8] hover:text-white ">
     <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}/research`}>{navigation.research}</Link>
   </li>
-  <li className="block   py-4  hover:bg-[#019FF8] hover:text-white ">
-    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.life}</Link>
+  <li className="block    hover:bg-[#019FF8] hover:text-white ">
+    <Link className="relative block py-2 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.life}</Link>
   </li>
 
  

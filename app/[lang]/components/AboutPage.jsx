@@ -5,8 +5,6 @@ import { Tab } from '@headlessui/react'
 import About from './About'
 import Greeting from './Greeting'
 import Vision from './Vision'
-import Academic from './Academic'
-import Researchs from './Researchs'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -29,14 +27,6 @@ function AboutPage({lang}) {
     'الرؤيا والرسالة': {
       id: 4,
       component: <Vision />
-    },
-    "الشؤون الأكاديمية": {
-      id: 5,
-      component: <Academic />
-    },
-    "البحث العلمي": {
-      id: 6,
-      component: <Researchs />
     },
   })
   return (

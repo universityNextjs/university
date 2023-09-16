@@ -1,4 +1,3 @@
-import { Carousel } from '@material-tailwind/react'
 import Image from 'next/image'
 import research from './images/research.jpg'
 export default function Researchs() {

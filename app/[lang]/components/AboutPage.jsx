@@ -5,6 +5,8 @@ import { Tab } from '@headlessui/react'
 import About from './About'
 import Greeting from './Greeting'
 import Vision from './Vision'
+import Academic from './Academic'
+import Researchs from './Researchs'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -27,7 +29,15 @@ function AboutPage({lang}) {
     'الرؤيا والرسالة': {
       id: 4,
       component: <Vision />
-    }
+    },
+    "الشؤون الأكاديمية": {
+      id: 5,
+      component: <Academic />
+    },
+    "البحث العلمي": {
+      id: 6,
+      component: <Researchs />
+    },
   })
   return (
     <div>
@@ -58,7 +68,7 @@ function AboutPage({lang}) {
                 key={idx}
                 className={classNames(
                   'rounded-xl bg-white p-3',
-                  'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
+                  'outline-0 focus:outline-none'
                 )}
               >
                 {category.component}

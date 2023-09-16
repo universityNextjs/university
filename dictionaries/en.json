@@ -6,12 +6,21 @@
     "academic": "Academic Affairs",
     "research": "Scientific Research",
     "life": "Student Life",
-    "hospital":"hospital ",
-      "subhospital":[
-        ["subhospital","subhospital"],
-        ["subhospital2","subhospital"],
-        ["subhospital3","subhospital"]
-         ]
+    "hospital": "hospital ",
+    "subhospital": [
+      [
+        "subhospital",
+        "subhospital"
+      ],
+      [
+        "subhospital2",
+        "subhospital"
+      ],
+      [
+        "subhospital3",
+        "subhospital"
+      ]
+    ]
   },
   "hero": {
     "title": "University Headlines",
@@ -38,6 +47,21 @@
           "description": "Published",
           "date": "10.09.2023"
         }
+      },
+      "stats": {
+        "title": "University statistics chart",
+        "counterSt": "Number of university students",
+        "CounterGS": "University Graduates",
+        "CounterHi": "Postgraduates",
+        "CounterStHi": "Graduate Students"
+      },
+      "cuntactus": {
+        "title":"Contact Form",
+        "subTitle":"Lets talk about everything!",
+        "fullName":"FULL NAME",
+        "mail":"MAIL",
+        "message":"MESSAGE",
+        "sendMessage":"SEND MESSAGE"
       },
       "activities": {
         "title": "Latest Activities",
@@ -66,21 +90,21 @@
       "title": "All News Page"
     }
   },
-  "footer":{
-    "community":"Community",
+  "footer": {
+    "community": "Community",
     "about": "About University",
     "colleges": "Colleges and Institutes",
     "academic": "Academic Affairs",
     "research": "Scientific Research",
     "life": "Student Life",
-    "hospital":"hospital ",
-    "resources":"Resources",
-    "accessibility":"Accessibility",
-    "Usability":"usability",
-    "allright":"2020 The Good Company. All Rights Reserved",
-    "terms":"Terms of service",
-    "privacy":"Privacy Policy",
-    "security":"Security",
-    "sitemap":"Sitemap"
+    "hospital": "hospital ",
+    "resources": "Resources",
+    "accessibility": "Accessibility",
+    "Usability": "usability",
+    "allright": "2020 The Good Company. All Rights Reserved",
+    "terms": "Terms of service",
+    "privacy": "Privacy Policy",
+    "security": "Security",
+    "sitemap": "Sitemap"
   }
 }

@@ -4,7 +4,6 @@ import Header from './components/header'
 import { Inter } from 'next/font/google'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
-import ContactUs from './components/ContactUs'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -30,10 +29,8 @@ const direction = isArabic ? 'rtl' : 'ltr';
            <div className='py-20'>
            {children}
            </div>
-            <ContactUs/>
           </section>
         </main>
-      
         <Footer lang={params.lang}/>
       </body>
     </html>

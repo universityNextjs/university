@@ -4,7 +4,7 @@ export default function LastNews({page}) {
   const {home: {lastNews}} = page;
   return (
     <section>
-      <h2 class='mb-12 text-center text-5xl font-medium'>Latest News</h2>
+      <h2 class='mb-12 text-center text-5xl font-medium'> {lastNews.title}</h2>
 
       <div class='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
         <div

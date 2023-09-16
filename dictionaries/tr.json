@@ -8,9 +8,18 @@
     "life": "Öğrenci Hayatı",
     "hospital": "hospital",
     "subhospital": [
-      ["subhospital", "subhospital"],
-      ["subhospital2", "subhospital"],
-      ["subhospital3", "subhospital"]
+      [
+        "subhospital",
+        "subhospital"
+      ],
+      [
+        "subhospital2",
+        "subhospital"
+      ],
+      [
+        "subhospital3",
+        "subhospital"
+      ]
     ]
   },
   "hero": {
@@ -38,6 +47,21 @@
           "description": "Yayınlanan",
           "date": "10.09.2023"
         }
+      },
+      "stats": {
+        "title": "Üniversite istatistik tablosu",
+        "counterSt": "Üniversite öğrencisi sayısı",
+        "CounterGS": "Üniversite Mezunları",
+        "CounterHi": "Lisansüstü Öğrenciler",
+        "CounterStHi": "Lisansüstü Öğrencileri"
+      },
+      "cuntactus": {
+        "title":"İletişim Formu",
+        "subTitle":"Hadi her şeyi konuşalım!",
+        "fullName":"TAM AD",
+        "mail":"POSTA",
+        "message":"MESAJ",
+        "sendMessage":"MESAJ GÖNDER"
       },
       "activities": {
         "title": "Faaliyetler",

@@ -22,7 +22,7 @@ const Nav = ({lang,navigation}) => {
     <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.colleges}</Link>
   </li>
   <li className="block   py-8   hover:bg-[#019FF8] hover:text-white ">
-    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.academic}</Link>
+    <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.hospital}</Link>
   </li>
   <li className="block   py-8   hover:bg-[#019FF8] hover:text-white ">
     <Link className="relative block py-8 px-4 lg:p-4  font-bold" href={`/${lang}`}>{navigation.research}</Link>
@@ -38,21 +38,19 @@ const Nav = ({lang,navigation}) => {
       onClick={toggleDropdown}
     >
       <span className="relative  block py-8 px-4 lg:p-4  font-bold">
-      {navigation.hospital}
+      {navigation.colleges}
       </span>
-
       <IoIosArrowDown  />  </button>
     {isOpen && (
       <div 
       className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-10">
          <div className=''>
-                 {hospitalMenuItems.map(([label, value], index) => (
+                 {hospitalMenuItems.map(([label, value], index,href) => (
                 <div key={index}>
-                   <a
-          href="#"
-          className="block px-4 py-2  text-gray-700 hover:bg-[#2386C8] "
-        > {value}
-          </a>
+                   <Link href={`/${lang}/Colleges/${label}`}
+                  className="block px-4 py-2  text-gray-700 hover:bg-[#2386C8] "
+                > {value}
+          </Link>
                 </div>
               ))}
    

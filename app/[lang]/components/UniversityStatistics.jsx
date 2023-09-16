@@ -15,7 +15,7 @@ const UniversityStatistics = ({page}) => {
     return ()=>clearInterval(interval)
   },[counter])
   return (
-    <section  className=" py-8 px-10 rounded-lg">
+    <section  className=" py-56 px-10 rounded-lg">
       <div className="container mx-auto">
         <h2 className="text-4xl text-center font-bold text-black mb-4">{stats.title}</h2>
         <div className="flex justify-between p-4 items-center">
